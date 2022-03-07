@@ -36,7 +36,12 @@ let sectionsImg = [
     },
 ];
 
+
 const eleContainer = document.querySelector(".team-container");
+const btnAdd = document.getElementById("addMemberButton");
+const eleName = document.getElementById("name");
+const eleRole = document.getElementById("role");
+const eleImage = document.getElementById("image");
 
 
 for (i = 0; i < 6; i++){
@@ -62,14 +67,7 @@ for (i = 0; i < 6; i++){
 }
 
 
-const btnAdd = document.getElementById("addMemberButton");
-const eleName = document.getElementById("name");
-const eleRole = document.getElementById("role");
-const eleImage = document.getElementById("image");
-
-
 btnAdd.addEventListener("click", function(){
-    eleName.value = "";
     for (i = 0; i < 1; i++){
         let cont = document.createElement("div");
         const image = document.createElement("div");
@@ -81,9 +79,9 @@ btnAdd.addEventListener("click", function(){
         image.classList.add("card-image");
         text.classList.add("card-text");
     
-        image.innerHTML = eleImage.value;
         titleName.innerHTML = eleName.value;
         titleRole.innerHTML = eleRole.value;
+        image.innerHTML = eleImage.value;
     
         text.append(titleName);
         text.append(titleRole);
