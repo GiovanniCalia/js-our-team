@@ -8,15 +8,24 @@ let sectionsImg = [
 console.log(sectionsImg[0].nome)
 
 
-const eleContainer = document.getElementsByClassName("team-container");
+const eleContainer = document.querySelector(".team-container");
 const eleSection = document.getElementsByClassName("team-card");
 
-const cont = document.createElement("div");
-cont.classList.add("ciao");
-cont.style.backgroundColor = "blue";
-cont.innerHTML = "ciao";
-console.log("cont",cont);
-eleContainer.append(cont);
+const img = document.createElement("img");
+img.src = "img/wayne-barnett-founder-ceo.jpg";
+img.innerHTML = "ciao";
+eleContainer.append(img);
+
+
+//cont.classList.add("ciao");
+//document.body.appendChild(img)
+//cont.style.width =`150px`;
+//cont.style.height =`150px`;
+//cont.innerHTML = "ciao";
+//console.log("cont",cont);
+
+
+
 
 
 
