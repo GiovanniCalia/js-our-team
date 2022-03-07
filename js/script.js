@@ -1,7 +1,7 @@
 let sectionsImg = [
     {
         name: "Wayne Barnett",
-        job: "Founder $ CEO",
+        job: "Founder & CEO",
         img: `<img src="img/wayne-barnett-founder-ceo.jpg" alt="Wayne Barnett">`,
     },
 
@@ -56,7 +56,7 @@ for (i = 0; i < 6; i++){
     text.append(titleName);
     text.append(titleJob);
 
-    titleName.innerHTML = sectionsImg[i].nome;
+    titleName.innerHTML = sectionsImg[i].name;
     titleJob.innerHTML = sectionsImg[i].job;
 
     cont.append(immagine);
